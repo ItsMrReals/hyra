@@ -12,20 +12,20 @@
 <body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-     
+
     </div>
-  
+
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item">
           Home
         </a>
-  
+
         <a class="navbar-item">
           Why&nbsp;<strike>not</strike>&nbsp;us
         </a>
       </div>
-  
+
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
@@ -49,6 +49,18 @@
       <button class="button is-sad" id="#ruinurlife2"><strike> Ruin your group </strike>&nbsp;Sign up</button>
     </div>
 
+  </section>
+  </section>
+  <section class="section">
+    <article class="message is-danger">
+      <div class="message-header">
+        <p>SHOOT!</p>
+      </div>
+      <div class="message-body">
+        We have shut down because nobody likes us, and thinks we are a 'parody', whatever that means pls use like
+        rocketapps or bloxtech
+      </div>
+    </article>
   </section>
   <section class="hero">
     <div class="hero-body">
@@ -79,7 +91,53 @@
         </div>
     </div>
     </nav>
-  </section>
+
+    <section class="section">
+
+      <p class="title">Why do you use us???</p>
+      <p class="subtitle"> Useless features nobody will ever use tl;dr lots of them.</p>
+      <hr>
+      <div class="columns is-multiline">
+        <div class="column is-one-quarter"> <strong> 9 Factor auth!</strong></div>
+        <div class="column is-three-quarters"> Yup!, You heard us right, nine factor auth! Its so useless and so dumb,
+          but
+          so not cool!</div>
+        <div class="column is-one-quarter"> <strong> Secuirty flaws</strong></div>
+        <div class="column is-three-quarters"> Yup! We have tons of secuirty holes its so cool, you can get onto random
+          peoples centers with no issues or no accounts! Your group secuirty does not matter to us here at noggin.
+        </div>
+      </div>
+
+    </section>
+    <section class="section">
+      <p class="title">Oh look!!</p>
+      <p class="subtitle"> Here is so random persons center right here!.</p>
+      <hr>
+      <div class="card is-clickable" id="ridk">
+        <div class="media is-left pt-5 pl-6 pb-5 pr-5">
+          <div class="media-left">
+
+            <div class="media-content">
+
+              <p class="title is-4"> dumb losers center</p>
+              <p class="subtitle is-6">The idiot group center + more is here!</p>
+
+            </div>
+          </div>
+          <div class="media-right pl-6">
+          </div>
+
+
+        </div>
+
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Noggin</strong> a rlly garbage parody of mycenter these days, by reals</a>.
+        </p>
+      </div>
+    </footer>
 
 </body>
 
@@ -96,7 +154,7 @@
     <div style="text-align: left; margin-left: 10px">
       <strong>OOPS!</strong><br>
       We're sorry but we could not figure out how to sign u up, sorry!
-    </div>`,        toast: true,
+    </div>`, toast: true,
         showConfirmButton: false,
         timer: 10000
       })
@@ -115,7 +173,7 @@
     <div style="text-align: left; margin-left: 10px">
       <strong>OOPS!</strong><br>
       we dont support signins yet, use bloxtech!
-    </div>`,        toast: true,
+    </div>`, toast: true,
         showConfirmButton: false,
         timer: 10000
       })
@@ -134,14 +192,24 @@
     <div style="text-align: left; margin-left: 10px">
       <strong>OOPS!</strong><br>
       we dont support signups yet, use bloxtech!
-    </div>`,        toast: true,
+    </div>`, toast: true,
         showConfirmButton: false,
         timer: 10000
       })
       button3.classList.remove('is-loading');
     }, 1500)
   })
+  const button4 = document.getElementById('ridk');
+
+  button4.addEventListener('click', () => {
+    console.log('clicked');
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops',
+      text: 'Looks like this garbage group has deleted data, STUPID!!!!!!',
+      footer: 'USE BLOXTECH!'
+    })
+  })
 </script>
 
 </html>
-
