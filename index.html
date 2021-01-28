@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>noggin - The platform for pooping</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+     
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+  
+        <a class="navbar-item">
+          Why&nbsp;<strike>not</strike>&nbsp;us
+        </a>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <button class="button button is-danger" id="#lolno"><strong>Sign up</strong></button>
+            <a class="button is-outlined" id="#lol">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="hero is-info">
+    <div class="hero-body">
+      <h1 class="title">
+        <strike> poop</strike> noggin
+      </h1>
+      <p class="subtitle">
+        <strike> poop </strike> noggin is an amazing platform for amazing use cases!!
+      </p>
+      <button class="button is-sad" id="#ruinurlife2"><strike> Ruin your group </strike>&nbsp;Sign up</button>
+    </div>
+
+  </section>
+  <section class="hero">
+    <div class="hero-body">
+      <h1 class="title">
+        The stats!
+      </h1>
+      <p class="subtitle">
+        We might of lost all of our users because we did some um bad things, who cares!!
+      </p>
+      <nav class="level">
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Users</p>
+            <p class="title">-57,038</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Centers</p>
+            <p class="title">-4573</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Teams</p>
+            <p class="title">-2475</p>
+          </div>
+        </div>
+    </div>
+    </nav>
+  </section>
+
+</body>
+
+<script>
+  const button = document.getElementById('#ruinurlife2');
+  button.addEventListener('click', () => {
+    console.log('clicked');
+    button.classList.add('is-loading');
+    setTimeout(function () {
+      Swal.fire({
+        position: 'top-end',
+        icon: 'error',
+        html: `
+    <div style="text-align: left; margin-left: 10px">
+      <strong>OOPS!</strong><br>
+      We're sorry but we could not figure out how to sign u up, sorry!
+    </div>`,        toast: true,
+        showConfirmButton: false,
+        timer: 10000
+      })
+      button.classList.remove('is-loading');
+    }, 1500)
+  })
+  const button2 = document.getElementById('#lol');
+  button2.addEventListener('click', () => {
+    console.log('clicked');
+    button2.classList.add('is-loading');
+    setTimeout(function () {
+      Swal.fire({
+        position: 'top-left',
+        icon: 'error',
+        html: `
+    <div style="text-align: left; margin-left: 10px">
+      <strong>OOPS!</strong><br>
+      we dont support signins yet, use bloxtech!
+    </div>`,        toast: true,
+        showConfirmButton: false,
+        timer: 10000
+      })
+      button2.classList.remove('is-loading');
+    }, 1500)
+  })
+  const button3 = document.getElementById('#lolno');
+  button3.addEventListener('click', () => {
+    console.log('clicked');
+    button3.classList.add('is-loading');
+    setTimeout(function () {
+      Swal.fire({
+        position: 'top-left',
+        icon: 'error',
+        html: `
+    <div style="text-align: left; margin-left: 10px">
+      <strong>OOPS!</strong><br>
+      we dont support signups yet, use bloxtech!
+    </div>`,        toast: true,
+        showConfirmButton: false,
+        timer: 10000
+      })
+      button3.classList.remove('is-loading');
+    }, 1500)
+  })
+</script>
+
+</html>
+
